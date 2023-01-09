@@ -36,10 +36,22 @@ function App() {
   };
 
   return (
-    <Expenses
-      expenses={expense}
-      onAddingNewExpenseData={addingNewExpenseDataHandler}
-    />
+    <>
+      <h1
+        style={{
+          color: "white",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        Expense Tracker
+      </h1>
+      <Expenses
+        expenses={expense}
+        onAddingNewExpenseData={addingNewExpenseDataHandler}
+      />
+    </>
   );
 }
 
